@@ -7,11 +7,29 @@
     <title>My page</title>
     <style>
         body {
-            background: rgb(0, 0, 0);
+            background: rgb(139, 136, 136);
             color: white;
-            font-family: cursive;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
+        }
+        body header nav ul li a{
+            font-size: x-large;
+            background-color: rgb(139, 136, 136);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 3px;
+            border-style: inset;
+            border-color:rgb(0, 255, 255);
+        }
+        h1{
+            font-size: xxx-large;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
         }
         header{
             background:black;
@@ -21,21 +39,47 @@
             background: white;
             color: gray;
             padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        div{
+            background: turquoise;
+            margin: auto;
+            width:100px
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            margin: 20px;
         }
         footer{
-            background: black;
-            padding: 10px
+            background-color: black;
+            padding: 10px 20px;
         }
+        
     </style>
 </head>
 <body>
-    <header>header</header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <h1 style="text-align: center;">Contacts</h1>
+            </ul>
+        </nav>
+    </header>
     <section>
         <div>a</div>
         <div>b</div>
         <div>c</div>
     </section>
-    <section>lower-section</section>
+    <section>lower section</section>
+    <section>Hello</section>
     <footer>footer</footer>
 </body>
 </html>
