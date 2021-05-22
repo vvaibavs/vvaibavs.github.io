@@ -7,7 +7,7 @@
     <title>My page</title>
     <style>
         body {
-            background: rgb(139, 136, 136);
+            background: rgb(63, 60, 60);
             color: white;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
@@ -29,7 +29,8 @@
             background-color: rgb(139, 136, 136);
         }
         header{
-            background:black;
+            background-color: black; /* For browsers that do not support gradients */
+            background-image: linear-gradient(rgb(22, 78, 95), rgb(54, 221, 243));
             padding: 20px;
         }
         h1{
@@ -60,7 +61,6 @@
             background: turquoise;
             margin: auto;
             width:100px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         ul{
             margin: 0;

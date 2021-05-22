@@ -7,7 +7,7 @@
     <title>My page</title>
     <style>
         body {
-            background: rgb(139, 136, 136);
+            background: rgb(63, 60, 60);
             color: white;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
@@ -34,8 +34,10 @@
             transform: translate(50px,100px);
         }
         header{
-            background:black;
+            background-color: black; /* For browsers that do not support gradients */
+            background-image: linear-gradient(rgb(22, 78, 95), rgb(54, 221, 243));
             padding: 20px;
+            max-width: 1900px;
         }
         section{
             background: white;
@@ -49,6 +51,7 @@
             transform: translate(13px, 10px);
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: large;
+            align-self: center;
         }
         section:hover{
             transform: translate(18px,20px);
@@ -56,7 +59,6 @@
         div{
             width: 1850px;
             font-size: x-large;
-            border: 1px solid black;
         }
         ul{
             margin: 0;
@@ -84,7 +86,7 @@
             </ul>
         </nav>
     </header>
-    <section style="">
+    <section>
         <div style="text-align: center;">gmail: vaibavsubbu007@gmail.com<br><a href="https://github.com/vvaibavs">github 💻 </a></div>
     </section>
 </body>
