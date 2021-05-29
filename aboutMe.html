@@ -7,8 +7,8 @@
     <title>My page</title>
     <style>
         body {
-            background: rgb(255, 255, 255);
-            color: white;
+            background: rgb(228, 228, 228);
+            color: black;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
@@ -29,13 +29,13 @@
             background-color: rgb(139, 136, 136);
         }
         header{
-            background-color: black; /* For browsers that do not support gradients */
-            background-image: linear-gradient(rgb(48, 48, 48), rgb(255, 255, 255));
-            padding: 20px;
+            background-color: rgb(228, 228, 228);; /* For browsers that do not support gradients */
+            /*background-image: linear-gradient(rgb(48, 48, 48), rgb(255, 255, 255));*/
+            padding-left: 20px
         }
         h1{
             text-shadow: 6px 6px 5px turquoise;
-            font-size: xxx-large;
+            font-size: xx-large;
         }
         a{
             text-decoration: none;
@@ -44,7 +44,7 @@
             transform: translate(50px,100px);
         }
         section{
-            background: rgb(197, 195, 195);
+            background: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             padding: 20px;
             display: flex;
@@ -53,10 +53,11 @@
             transform: translate(13px, 10px);
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: large;
-            border: rgb(0, 0, 0)
+            border-radius: 5px;
         }
         section:hover{
             transform: translate(18px, 20px);
+            border: 2px solid grey;
         }
         div{
             background: turquoise;
@@ -85,7 +86,7 @@
             <ul>
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="index.html">Home</a></li>
-                <h1 style="text-align: center;">About Me</h1>
+                <h1 style="text-align: left;">About Me</h1>
             </ul>
         </nav>
     </header>
