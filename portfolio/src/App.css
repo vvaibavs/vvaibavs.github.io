@@ -121,7 +121,7 @@
 }
 
 .name-title {
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
   position: relative;
 }
 
@@ -136,6 +136,7 @@
   cursor: default;
   letter-spacing: -1px;
 }
+
 
 .name-text:hover {
   transform: scale(1.05);

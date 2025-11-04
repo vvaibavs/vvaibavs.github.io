@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+import { ContainerTextFlip } from './components/ui/container-text-flip';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -114,9 +115,9 @@ function App() {
       featured: true
     },
     {
-      name: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with user authentication, payment processing, and inventory management.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe API"]
+      name: "Proxi",
+      description: "Engineered an IoT-enabled eyeglass attachment using Raspberry Pi and camera module for real-time object detection to track screen exposure and make sure the user maintains a healthy viewing distance from their device. Developed a React Native App to display centralized screen-time analytics, integrating data from the IoT device.",
+      tech: ["React Native", "Node.js", "MongoDB", "Raspberry Pi", "Electronics"]
     }
   ];
 
@@ -159,16 +160,19 @@ function App() {
       <section id="home" className="home-section">
         <div className="home-content">
           <h1 className="name-title">
-            <span className="name-text">Vaibav Subramanian</span>
+            {/* <span className="name-text">Vaibav Subramanian</span> */}
+            <ContainerTextFlip
+                words={["Vaibav Subramanian", "Software Developer", "Electronics Engineer", "IoT Enthusiast"]}
+                className="name-text"
+                interval={2500}
+            />
           </h1>
           <div className="about-me">
             <h2 className="section-title">About Me</h2>
             <p className="about-text">
               Welcome to my portfolio! I'm a passionate software developer with a strong foundation in
               full-stack development and a keen interest in creating innovative solutions. I enjoy
-              working on challenging projects that push the boundaries of technology and make a positive
-              impact. When I'm not coding, you can find me exploring new technologies, contributing to
-              open-source projects, or working on personal side projects.
+              working and experimenting with electronics and IoT projects. When I'm not coding, you can find me exploring new technologies, working on personal side projects, or playing video games.
             </p>
             <p className="about-text">
               I'm currently pursuing a Bachelor's degree in <b>Electrical and Computer Engineering</b> at the <b> University of Texas at Austin </b> and I'm continuously learning new skills. My goal is to build meaningful applications that solve
@@ -263,13 +267,13 @@ function App() {
           {/* GitHub Embed */}
           <div className="github-section">
             <h3 className="github-title">Check out my GitHub</h3>
-            <div className="github-container">
-              <iframe
+            {/* <div className="github-container"> */}
+              {/* <iframe
                 src="https://github-readme-stats.vercel.app/api?username=vvaibavs&show_icons=true&theme=dark&hide_border=true&bg_color=1a1a1a&title_color=BF5700&icon_color=BF5700&text_color=ffffff"
                 className="github-stats"
                 title="GitHub Stats"
                 frameBorder="0"
-              ></iframe>
+              ></iframe> */}
               <div className="github-link-container">
                 <a
                   href="https://github.com/vvaibavs"
@@ -283,7 +287,7 @@ function App() {
                   <span>View My GitHub Profile</span>
                 </a>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
